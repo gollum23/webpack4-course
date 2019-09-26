@@ -15,16 +15,13 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
-    port: 9000,
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader'
         ]
       }
@@ -35,8 +32,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Plugins'
     }),
-    new MiniCSSExtractPlugin({
-      filename: 'css/[name].css'
-    })
   ]
 }
