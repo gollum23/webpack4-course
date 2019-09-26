@@ -1,3 +1,11 @@
 import '../css/index.css'
+import text from './text'
 
-document.body.innerHTML = '<p>Hello from index webpack</p>'
+text()
+
+if (module.hot) {
+  module.hot.accept('./text.js', function() {
+    console.log('hot reload')
+    text()
+  })
+}
