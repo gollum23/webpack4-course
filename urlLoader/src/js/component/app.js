@@ -13,8 +13,8 @@ function App() {
   }
   return (
     <div>
-      Que linda aplicación hecha en React.js :)
-      <video src={video} width={360} controls poster={logo}></video>
+      <h1>Que linda aplicación hecha en React.js :)</h1>
+      <video src={video} width={360} controls poster={logo} />
       <p>
         <img src={logo} alt="" width={40}/>
       </p>
