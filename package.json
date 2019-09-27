@@ -14,7 +14,9 @@
     "build:react": "webpack-dev-server --config ./react/webpack.config.js --mode development",
     "build:url": "webpack-dev-server --config ./urlLoader/webpack.config.js --mode development",
     "build:prepro": "webpack-dev-server --config ./prepro/webpack.config.js --mode development",
-    "build:duplicated": "webpack --config ./preventDuplication/webpack.config.js --mode development"
+    "build:duplicated": "webpack --config ./preventDuplication/webpack.config.js --mode development",
+    "build:dll": "webpack --config ./dll/webpack.dll.config.js",
+    "build:fast": "webpack --config ./dll/webpack.config.js"
   },
   "keywords": [
     "Platzi",

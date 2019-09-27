@@ -1,0 +1,21 @@
+body {
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Arial', serif;
+}
+
+.sass{color:pink}
+
+.less {
+  color: orange;
+}
+
+.stylus {
+  color: #008000;
+}
+
