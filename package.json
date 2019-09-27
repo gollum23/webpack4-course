@@ -16,7 +16,9 @@
     "build:prepro": "webpack-dev-server --config ./prepro/webpack.config.js --mode development",
     "build:duplicated": "webpack --config ./preventDuplication/webpack.config.js --mode development",
     "build:dll": "webpack --config ./dll/webpack.dll.config.js",
-    "build:fast": "webpack --config ./dll/webpack.config.js"
+    "build:fast": "webpack --config ./dll/webpack.config.js",
+    "build:dynamic:dll": "webpack --config ./dynamicImports/webpack.dll.config.js",
+    "build:dynamic:fast": "webpack --config ./dynamicImports/webpack.config.js"
   },
   "keywords": [
     "Platzi",
@@ -26,6 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/plugin-transform-runtime": "7.6.2",
     "@babel/preset-env": "7.6.2",
     "@babel/preset-react": "7.0.0",
